@@ -7,3 +7,5 @@ Those are my dotfiles.
 - Dive into rofi configuration
 - Include some scripts (some can be as a submodules)
 - Makes this readme a litle fancier
+- Configure nano to be closer to emacs
+- User rofi for more things
