@@ -1,0 +1,3 @@
+rofi.theme: ~/.config/rofi/themes/onedark
+rofi.location: 2
+rofi.yoffset: 30
