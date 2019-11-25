@@ -6,11 +6,17 @@
 
 - link:
     ~/.zsh: .zsh
-    ~/.zshrc: .zshrc
+    ~/.zshrc:
+       path: .zshrc
+       force: true
     ~/.emacs.d/init.el: init.el
     ~/.xbindkeysrc: .xbindkeysrc
-    ~/.gitconfig: .gitconfig
-    ~/.local/share/konsole: konsole
+    ~/.gitconfig:
+       path: .gitconfig
+       force: true
+    ~/.local/share/konsole: 
+       force: true
+       path: konsole
     ~/.config/rofi: rofi
     
 
