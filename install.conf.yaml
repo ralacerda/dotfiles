@@ -7,3 +7,12 @@
 - link:
     ~/.zsh: .zsh
     ~/.zshrc: .zshrc
+    ~/.emacs.d/init.el: init.el
+    ~/.xbindkeysrc: .xbindkeysrc
+    ~/.gitconfig: .gitconfig
+    ~/.local/share/konsole: konsole
+    ~/.config/rofi: rofi
+    
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
