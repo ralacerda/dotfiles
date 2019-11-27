@@ -217,6 +217,7 @@ Optionally call recursively on symlinks."
 
 ;; When starting a programming mode, show line numbers
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(add-hook 'prog-mode-hook 'toggle-truncate-lines)
 
 ;; This is confusing
 (setq split-width-threshold 80)
