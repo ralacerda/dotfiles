@@ -250,8 +250,7 @@ Optionally call recursively on symlinks."
   :config
   (setq dashboard-items '((recents  . 15)
                         (bookmarks . 5)
-                        (projects . 5)
-                        (agenda . 5)))
+                        (projects . 5)))
   (dashboard-setup-startup-hook))
 
 (use-package ivy 
