@@ -283,7 +283,11 @@ Optionally call recursively on symlinks."
 
 (use-package avy
   :bind ("C-+" . avy-goto-word-1)
-  :bind ("C-*" . avy-goto-char))
+  :bind ("C-*" . avy-goto-char)
+  :bind ("C-q" . avy-goto-word-1)
+
+  :config
+  (setq avy-all-windows nil))
 
 ;;---------------------------------------------------
 ;; Programing modes
