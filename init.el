@@ -194,6 +194,12 @@ Optionally call recursively on symlinks."
 ;; Start the server
 ;; (server-start)
 
+;;--------------------------------------------------------------------
+;; Visual Stuff
+;;--------------------------------------------------------------------
+
+(set-face-attribute 'default nil :height 130)
+
 ;; When emacs starts, go fullscreen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
