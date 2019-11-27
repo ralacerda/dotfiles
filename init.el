@@ -194,11 +194,15 @@ Optionally call recursively on symlinks."
 ;; Start the server
 ;; (server-start)
 
+(save-place-mode 1)
 ;;--------------------------------------------------------------------
 ;; Visual Stuff
 ;;--------------------------------------------------------------------
 
 (set-face-attribute 'default nil :height 130)
+
+(setq display-line-numbers-width 3)
+(setq display-line-numbers-width-start t)
 
 ;; When emacs starts, go fullscreen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -459,8 +463,6 @@ Optionally call recursively on symlinks."
 (global-unset-key "\C-z")
 (global-set-key (kbd "C-z")  'dabbrev-expand)
 (global-set-key (kbd "C-S-z")  'hippie-expand)
-
-(global-unset-key "\C-q")
 
 (global-set-key (kbd "C-?") 'help-command)
 (global-set-key (kbd "M-?") 'mark-paragraph)
