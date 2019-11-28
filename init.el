@@ -222,6 +222,7 @@ Optionally call recursively on symlinks."
 ;; When starting a programming mode, show line numbers
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (add-hook 'prog-mode-hook 'toggle-truncate-lines)
+(add-hook 'prog-mode-hook 'electric-pair-mode)
 
 ;; This is confusing
 (setq split-width-threshold 80)
@@ -439,6 +440,8 @@ Optionally call recursively on symlinks."
 ;; More packages
 ;;--------------------------------------------------------------------
 
+(use-package flycheck)
+
 (use-package expand-region
   :bind
   ("C-=" . 'er/expand-region))
@@ -455,6 +458,12 @@ Optionally call recursively on symlinks."
 (use-package magit
   :bind
   ("C-x g" . magit-status))
+
+(use-package yasnippet
+  :config
+  (yas-reload-all)
+  :hook
+  (prog-mode . yas-minor-mode))
 
 ;;--------------------------------------------------------------------
 ;; Keybinds
