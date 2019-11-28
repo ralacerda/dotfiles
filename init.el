@@ -465,6 +465,10 @@ Optionally call recursively on symlinks."
   :hook
   (prog-mode . yas-minor-mode))
 
+(use-package git-gutter
+  :config
+  (global-git-gutter-mode +1))
+
 ;;--------------------------------------------------------------------
 ;; Keybinds
 ;;--------------------------------------------------------------------
