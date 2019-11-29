@@ -280,6 +280,12 @@ Optionally call recursively on symlinks."
   (("C-t" . 'iy-go-up-to-char)
   ("C-S-t" . 'iy-go-up-to-char-backward)))
 
+(use-package minions
+  :config
+  (setq minions-mode-line-lighter ""
+        minions-mode-line-delimiters '("" . ""))
+  (minions-mode 1))
+
 (use-package counsel
   :bind
   ("M-x" . 'counsel-M-x)
