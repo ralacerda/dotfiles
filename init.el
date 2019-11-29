@@ -330,7 +330,7 @@ Optionally call recursively on symlinks."
 
 (use-package org-bullets
   :config (setq org-bullets-bullet-list '("▶" "◉" "●" "○"))
-  :init (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+  :config (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 (setq org-ellipsis " ⤵")
 
@@ -446,16 +446,20 @@ Optionally call recursively on symlinks."
   :bind
   ("C-=" . 'er/expand-region))
 
-(use-package markdown-mode)
+(use-package markdown-mode
+  :defer t
+  )
 
 (use-package restart-emacs
 :bind ("C-c e r" . 'restart-emacs))
 
 (use-package which-key
-  :init
+  :defer t
+  :config
   (which-key-mode))
 
 (use-package magit
+  :defer t
   :bind
   ("C-x g" . magit-status))
 
@@ -466,6 +470,7 @@ Optionally call recursively on symlinks."
   (prog-mode . yas-minor-mode))
 
 (use-package git-gutter
+  :defer t
   :config
   (global-git-gutter-mode +1)
   (setq git-gutter:update-interval 1))
