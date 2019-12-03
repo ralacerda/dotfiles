@@ -481,6 +481,8 @@ Optionally call recursively on symlinks."
   (global-git-gutter-mode +1)
   (setq git-gutter:update-interval 1))
 
+
+
 ;;--------------------------------------------------------------------
 ;; Keybinds
 ;;--------------------------------------------------------------------
