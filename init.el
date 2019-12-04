@@ -318,7 +318,7 @@ Optionally call recursively on symlinks."
 ;; Org Stuff
 ;;--------------------------------------------------------------------
 
-(load "~/emacs.d/org.el")
+(load "~/.emacs.d/org.el")
 
 ;;--------------------------------------------------------------------
 ;; More packages
