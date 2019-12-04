@@ -269,7 +269,7 @@ Optionally call recursively on symlinks."
 
 (use-package ivy 
   :config  
-  (setq ivy-use-virtual-buffers t)
+  (setq ivy-use-virtual-buffers nil)
   (setq ivy-count-format "(%d/%d) ")
   (setq ivy-height 20)
   (setq ivy-fixed-height-minibuffer nil)
@@ -307,6 +307,23 @@ Optionally call recursively on symlinks."
 
   :config
   (setq avy-all-windows nil))
+
+(use-package ivy-rich
+  :after ivy
+  :config
+    (ivy-rich-mode +1))
+
+(use-package hl-todo
+  :hook (prog-mode . hl-todo-mode)
+  :config
+  (setq hl-todo-highlight-punctuation ":"
+        hl-todo-keyword-faces
+        `(("TODO"       warning bold)
+          ("FIXME"      error bold)
+          ("HACK"       font-lock-constant-face bold)
+          ("REVIEW"     font-lock-keyword-face bold)
+          ("NOTE"       success bold)
+          ("DEPRECATED" font-lock-doc-face bold))))
 
 ;;---------------------------------------------------
 ;; Programing modes
