@@ -35,8 +35,10 @@ alias mv='nocorrect mv'
 alias mkdir='nocorrect mkdir'
 alias gist='nocorrect gist'
 alias sudo='nocorrect sudo'
-alias ls="ls --color=auto --group-directories-first -lah"
-alias lls="ls | less"
+alias ls='exa -l --group-directories-first'
+alias la='ls -a'
+alias lt='ls -T -L=2'
+alias cat='bat'
 
 alias mv='mv -v'
 alias cp='cp -v'
@@ -48,3 +50,6 @@ setopt no_correct_all
 source $base_path/history.zsh
 source $base_path/completion.zsh
 source $base_path/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
+PATH=$PATH:$HOME/.config/emacs/bin
+source virtualenvwrapper.sh
