@@ -9,8 +9,6 @@
     ~/.zshrc:
        path: .zshrc
        force: true
-    ~/.emacs.d/init.el: init.el
-    ~/.xbindkeysrc: .xbindkeysrc
     ~/.gitconfig:
        path: .gitconfig
        force: true
