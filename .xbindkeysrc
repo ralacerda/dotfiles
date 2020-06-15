@@ -1,9 +1,0 @@
-"xte 'keydown Down'"
-    b:8
-"xte 'keyup Down'"
-    b:8 + release
-"xte 'keydown Up'"
-    b:9
-"xte 'keyup Up'"
-    b:9 + release
-
