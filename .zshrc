@@ -52,4 +52,3 @@ source $base_path/completion.zsh
 source $base_path/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 PATH=$PATH:$HOME/.config/emacs/bin
-source virtualenvwrapper.sh
