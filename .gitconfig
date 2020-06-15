@@ -1,3 +1,5 @@
 [user]
 	name = Renato Lacerda
 	email = renato.ac.lacerda@gmail.com
+[credential]
+	helper = cache --timeout=7200
