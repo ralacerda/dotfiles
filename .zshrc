@@ -1,4 +1,4 @@
-base_path="$HOME/.zsh/"
+base_path="$HOME/.zsh"
 fpath=( "$HOME/.zsh/pure" $fpath )
 
 autoload -U promptinit; promptinit
