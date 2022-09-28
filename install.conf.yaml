@@ -15,10 +15,6 @@
     ~/.local/share/konsole: 
        force: true
        path: konsole
-    ~/.config/doom: 
-       path: doom-private-repository
-       force: false
-    ~/.Rprofiles: .Rprofiles
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
