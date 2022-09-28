@@ -49,6 +49,6 @@ setopt no_correct_all
 
 source $base_path/history.zsh
 source $base_path/completion.zsh
-source $base_path/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $base_path/fast-syntax-highlighting/F-Sy-H.plugin.zsh
 
 PATH=$PATH:$HOME/.config/emacs/bin
