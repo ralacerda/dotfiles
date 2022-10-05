@@ -44,6 +44,8 @@ alias la='ls -a'
 alias lt='ls -T -L=2'
 alias cat='bat'
 
+alias lg='lazygit'
+
 alias mv='mv -v'
 alias cp='cp -v'
 

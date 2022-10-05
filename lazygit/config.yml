@@ -1,0 +1,36 @@
+gui:
+  authorColors:
+    'Renato Lacerda': 'cyan'
+    '*': 'red'
+  showIcons: true
+  theme:
+    activeBorderColor:
+      - green
+      - bold
+    inactiveBorderColor:
+      - white
+    optionsTextColor:
+      - blue
+    selectedLineBgColor:
+      - default
+    selectedRangeBgColor:
+      - default
+    cherryPickedCommitBgColor:
+      - cyan
+    cherryPickedCommitFgColor:
+      - blue
+    unstagedChangesColor:
+      - red
+
+disableStartupPopups: true
+
+keybinding:
+  universal:
+    quit: 'Q'
+    quit-alt1: '<c-c>' # alternative/alias of quit
+    return: '<c-q>' # return to previous menu, will quit if there's nowhere to return
+    
+os:
+  editCommand: 'nano'
+
+notARepository: 'skip'
