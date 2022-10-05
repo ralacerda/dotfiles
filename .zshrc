@@ -1,3 +1,5 @@
+LANG=en_US.UTF-8
+
 base_path="$HOME/.zsh"
 fpath=( "$HOME/.zsh/pure" $fpath )
 
@@ -14,6 +16,8 @@ setopt NO_NOMATCH
 CLICOLOR=1
 
 bindkey -e
+
+REPORTTIME=-1
 
 bindkey '^[p' up-line-or-history
 bindkey '^[n' down-line-or-history
