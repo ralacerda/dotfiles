@@ -50,4 +50,4 @@ eval "$(starship init zsh)"
 
 source $base_path/history.zsh
 source $base_path/completion.zsh
-source $base_path/fast-syntax-highlighting/F-Sy-H.plugin.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

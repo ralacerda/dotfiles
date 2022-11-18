@@ -2,6 +2,3 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule ".zsh/fast-syntax-highlighting"]
-	path = .zsh/fast-syntax-highlighting
-	url = https://github.com/zdharma/fast-syntax-highlighting.git
