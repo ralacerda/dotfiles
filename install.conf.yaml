@@ -21,6 +21,9 @@
     ~/.config/rofi:
        path: rofi
        force: true
+    ~/.config/starship:
+       path: starship.toml
+       force: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
