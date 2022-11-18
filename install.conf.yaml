@@ -15,6 +15,12 @@
     ~/.local/share/konsole: 
        force: true
        path: konsole
+    ~/.config/lazygit:
+       path: lazygit
+       force: true
+    ~/.config/rofi:
+       path: rofi
+       force: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
