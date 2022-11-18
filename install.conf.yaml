@@ -5,7 +5,7 @@
 - clean: ['~']
 
 - link:
-    ~/.zsh: .zsh
+    ~/.zsh: zsh
     ~/.zshrc:
        path: .zshrc
        force: true
