@@ -52,6 +52,8 @@ alias cp='cp -v'
 alias rsync='rsync --progress'
 
 setopt no_correct_all
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 
 source $base_path/history.zsh
 source $base_path/completion.zsh
