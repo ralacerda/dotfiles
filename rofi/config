@@ -1,4 +1,0 @@
-rofi.theme: ~/.config/rofi/themes/my_theme
-rofi.location: 2
-rofi.yoffset: 30
-rofi.show-icons: true
