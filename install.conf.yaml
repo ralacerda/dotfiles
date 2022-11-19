@@ -7,20 +7,22 @@
 - link:
     ~/.zsh: zsh
     ~/.zshrc:
-       path: .zshrc
-       force: true
+      path: .zshrc
+      force: true
     ~/.gitconfig:
-       path: .gitconfig
-       force: true
-    ~/.local/share/konsole: 
-       force: true
-       path: konsole
+      path: .gitconfig
+      force: true
+    ~/.local/share/konsole:
+      force: true
+      path: konsole
     ~/.config/lazygit:
-       path: lazygit
-       force: true
+      path: lazygit
+      force: true
     ~/.config/rofi:
-       path: rofi
-       force: true
-    ~/.config/starship:
-       path: starship.toml
-       force: true
+      path: rofi
+      force: true
+    ~/.config/starship.toml:
+      path: starship.toml
+      force: true
+    ~/.config/kitty:
+      path: kitty
