@@ -26,6 +26,9 @@ DIRSTACKSIZE=8
 setopt autopushd pushdminus pushdsilent pushdtohome
 alias dh='dirs -v'
 
+# sets the TERM variable when I'm using ssh
+alias ssh='TERM=xterm-256color ssh'
+
 # Use rust command-line alternatives
 alias ls='exa -l --group-directories-first --icons --git'
 alias la='ls -a'
