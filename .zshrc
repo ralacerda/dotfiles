@@ -36,13 +36,16 @@ alias top='btm'
 
 # Alias for common commands
 alias lg='lazygit'
+alias ld='lazydocker'
+alias gc='git clone'
 
-# Always be verbose when copying and moving
+# Always be verbose
 # Confirmation when deleting
 # Always show progress with rsync
 alias mv='mv -v'
 alias cp='cp -v'
-alias rm='rm -I'
+alias rm='rm -Iv'
+alias mkdir='mkdir -vp'
 alias rsync='rsync --progress'
 
 eval "$(zoxide init zsh)"
