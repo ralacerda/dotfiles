@@ -27,10 +27,10 @@ setopt autopushd pushdminus pushdsilent pushdtohome
 alias dh='dirs -v'
 
 # Use rust command-line alternatives
-alias ls='exa -l --group-directories-first'
+alias ls='exa -l --group-directories-first --icons --git'
 alias la='ls -a'
 alias lt='ls -T -L=2'
-alias cat='bat'
+alias cat='bat --style=grid,header-filename'
 alias du='dust'
 alias top='btm'
 
@@ -38,6 +38,7 @@ alias top='btm'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias gc='git clone'
+alias gs='git status'
 
 # Always be verbose
 # Confirmation when deleting
