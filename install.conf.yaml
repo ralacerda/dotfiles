@@ -26,3 +26,5 @@
       force: true
     ~/.config/kitty:
       path: kitty
+    ~/.config/nvim:
+      path: nvim
