@@ -7,10 +7,10 @@
 - link:
     ~/.zsh: zsh
     ~/.zshrc:
-      path: .zshrc
+      path: zshrc
       force: true
     ~/.gitconfig:
-      path: .gitconfig
+      path: gitconfig
       force: true
     ~/.local/share/konsole:
       force: true
