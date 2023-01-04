@@ -37,6 +37,12 @@ alias cat='bat --style=grid,header-filename'
 alias du='dust'
 alias top='btm'
 
+# ls for folders only
+alias lsd='ls -d */'
+
+# open current folder and redirects output
+alias open='xdg-open . &>/dev/null'
+
 # Alias for common commands
 alias lg='lazygit'
 alias ld='lazydocker'
