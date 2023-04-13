@@ -66,9 +66,11 @@ alias rm='rm -Iv'
 alias mkdir='mkdir -vp'
 alias rsync='rsync --progress'
 
+# Start zoxide and starship
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
+# Load history, completion and plugins
 source $base_path/history.zsh
 source $base_path/completion.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
