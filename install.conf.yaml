@@ -28,3 +28,5 @@
       path: kitty
     ~/.config/nvim:
       path: nvim
+    ~/.config/bat:
+      path: bat
