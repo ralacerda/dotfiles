@@ -45,8 +45,11 @@ take() {
   mkdir $1
   cd $1
 }
+
 # open current folder and redirects output
-alias open='xdg-open . &>/dev/null'
+open() {
+  xdg-open "${1:-.}" &>/dev/null
+}
 
 # Alias for common commands
 alias lg='lazygit'
