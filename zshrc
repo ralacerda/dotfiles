@@ -40,6 +40,11 @@ alias top='btm'
 # ls for folders only
 alias lsd='ls -d */'
 
+# Create dir and cd into it
+take() {
+  mkdir $1
+  cd $1
+}
 # open current folder and redirects output
 alias open='xdg-open . &>/dev/null'
 
