@@ -31,6 +31,6 @@ keybinding:
     return: '<c-q>' # return to previous menu, will quit if there's nowhere to return
     
 os:
-  editCommand: 'nano'
+  Edit: 'nano'
 
 notARepository: 'skip'
