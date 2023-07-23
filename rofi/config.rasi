@@ -16,4 +16,3 @@ configuration {
   }
 }
 
-@theme "/home/rlacerda/.config/rofi/themes/nord.rasi"
