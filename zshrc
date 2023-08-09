@@ -30,10 +30,10 @@ alias dh='dirs -v'
 alias ssh='TERM=xterm-256color ssh'
 
 # Use rust command-line alternatives
-alias ls='exa -l --group-directories-first --icons --git'
+alias ls='exa -l --group-directories-first --icons'
 alias la='ls -a'
 alias lt='ls -T -L=2'
-alias cat='bat --style=grid,header-filename'
+alias cat='batcat'
 alias du='dust'
 alias top='btm'
 
@@ -48,7 +48,7 @@ take() {
 
 # open current folder and redirects output
 open() {
-  xdg-open "${1:-.}" &>/dev/null
+  explorer.exe "${1:-.}" &>/dev/null
 }
 
 # Alias for common commands
@@ -66,6 +66,9 @@ alias rm='rm -Iv'
 alias mkdir='mkdir -vp'
 alias rsync='rsync --progress'
 
+# Add cargo to path
+export PATH="/home/rlacerda/.cargo/bin:$PATH"
+
 # Start zoxide and starship
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
@@ -73,9 +76,9 @@ eval "$(starship init zsh)"
 # Load history, completion and plugins
 source $base_path/history.zsh
 source $base_path/completion.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/fzf/key-bindings.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /home/rlacerda/repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# source /usr/share/fzf/key-bindings.zsh
 
 # Set pnpm variables
 export PNPM_HOME="$HOME/.local/share/pnpm"
@@ -86,3 +89,10 @@ export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="/mnt/c/Users/RenatoAugustodoCarmo/AppData/Local/Programs/Microsoft VS Code/bin:$PATH"
