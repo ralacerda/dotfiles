@@ -84,5 +84,6 @@ export PATH="$PNPM_HOME:$PATH"
 # Set nvm variables and load the plugin
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nr')
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
