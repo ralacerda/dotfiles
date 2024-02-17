@@ -57,6 +57,9 @@ alias ld='lazydocker'
 alias gc='git clone'
 alias gs='git status'
 
+# Alias for gh commands
+## Use fzf to select a repository to clone
+alias ghc='gh repo list --json name | jq -r ".[].name" | fzf --prompt="Select a repository: " | xargs -I {} gh repo clone {}'
 # Always be verbose
 # Confirmation when deleting
 # Always show progress with rsync
