@@ -60,13 +60,15 @@ alias gs='git status'
 # Alias for gh commands
 ## Use fzf to select a repository to clone
 alias ghc='gh repo list --json name | jq -r ".[].name" | fzf --prompt="Select a repository: " | xargs -I {} gh repo clone {}'
+
 # Always be verbose
-# Confirmation when deleting
-# Always show progress with rsync
 alias mv='mv -v'
 alias cp='cp -v'
+# Ask before removing files
 alias rm='rm -Iv'
+# Create parent directories if they don't exist
 alias mkdir='mkdir -vp'
+# Show rsync progress
 alias rsync='rsync --progress'
 
 # Start zoxide and starship
