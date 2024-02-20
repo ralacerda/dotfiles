@@ -61,6 +61,12 @@ alias gs='git status'
 ## Use fzf to select a repository to clone
 alias ghc='gh repo list -L 100 --json name --jq ".[].name" | fzf --prompt="Select a repository: " | xargs -I {} gh repo clone {}'
 
+# Alias for Zoxide
+## Run zoxide in interactive mode passing folders that start with the current folder
+## Basically a way to run "zi" but only for the current folder
+alias cdz='zi "$(pwd)" /'
+
+
 # Always be verbose
 alias mv='mv -v'
 alias cp='cp -v'
