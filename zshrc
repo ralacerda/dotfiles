@@ -66,6 +66,12 @@ alias ghc='gh repo list -L 100 --json name --jq ".[].name" | fzf --prompt="Selec
 ## Basically a way to run "zi" but only for the current folder
 alias cdz='zi "$(pwd)" /'
 
+# Pipe find with maxdepth 1 into sort into fzf and cd into the selected folder
+cdl() {
+    local target
+    target="$(find . -maxdepth 1 -type d -printf "%f\n" | LC_COLLATE=C sort -r | fzf)" || return
+    cd "$target" || return
+}
 
 # Always be verbose
 alias mv='mv -v'
