@@ -106,13 +106,6 @@ source /usr/share/fzf/key-bindings.zsh
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
-# Set nvm variables and load the plugin
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
-export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nr')
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
-
-
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
@@ -122,3 +115,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Turso
 export PATH="$HOME/.turso:$PATH"
+
+# fnm
+export PATH="$HOME/.local/share/fnm:$PATH"
+eval "`fnm env`"
