@@ -114,11 +114,11 @@ source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 
 # bun completions
-[ -s "/home/ralacerda/.bun/_bun" ] && source "/home/ralacerda/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Turso
-export PATH="/home/ralacerda/.turso:$PATH"
+export PATH="$HOME/.turso:$PATH"
