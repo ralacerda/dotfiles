@@ -60,6 +60,14 @@ alias gs='git status'
 # Alias for gh commands
 ## Use fzf to select a repository to clone
 alias ghc='gh repo list -L 100 --json name --jq ".[].name" | fzf --prompt="Select a repository: " | xargs -I {} gh repo clone {}'
+## Open repo in the browser
+alias ghw='gh repo view -w'
+## Create git repo, set as origen and push
+ghp() {
+    local name="$1"
+    gh repo create "$name" --private --source=. --remote=upstream --push
+}
+
 
 # Alias for Zoxide
 ## Run zoxide in interactive mode passing folders that start with the current folder
@@ -104,3 +112,13 @@ export NVM_COMPLETION=true
 export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nr')
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
+
+# bun completions
+[ -s "/home/ralacerda/.bun/_bun" ] && source "/home/ralacerda/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Turso
+export PATH="/home/ralacerda/.turso:$PATH"
