@@ -37,6 +37,9 @@ alias cat='bat --style=grid,header-filename'
 alias du='dust'
 alias top='btm'
 
+# ls piped to less
+alias lls="ls --color='always' | less -R"
+
 # ls for folders only
 alias lsd='ls -d */'
 
@@ -92,15 +95,15 @@ alias mkdir='mkdir -vp'
 alias rsync='rsync --progress'
 
 # Start zoxide and starship
+export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 # Load history, completion and plugins
 source $base_path/history.zsh
 source $base_path/completion.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/fzf/key-bindings.zsh
+source /home/ralacerda/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Set pnpm variables
 export PNPM_HOME="$HOME/.local/share/pnpm"
@@ -108,6 +111,8 @@ export PATH="$PNPM_HOME:$PATH"
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# zoxide
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -119,3 +124,13 @@ export PATH="$HOME/.turso:$PATH"
 # fnm
 export PATH="$HOME/.local/share/fnm:$PATH"
 eval "`fnm env`"
+
+# go
+export PATH="/usr/local/go/bin:$PATH"
+export PATH="/$HOME/go/bin:$PATH"
+
+
+# cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

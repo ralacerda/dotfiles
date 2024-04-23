@@ -2,7 +2,7 @@ gui:
   authorColors:
     'Renato Lacerda': 'cyan'
     '*': 'red'
-  showIcons: true
+  nerdFontsVersion: "3"
   theme:
     activeBorderColor:
       - green
