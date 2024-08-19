@@ -119,3 +119,6 @@ export PATH="$HOME/.turso:$PATH"
 # fnm
 export PATH="$HOME/.local/share/fnm:$PATH"
 eval "`fnm env`"
+
+# go
+export PATH="$HOME/go/bin:$PATH"
