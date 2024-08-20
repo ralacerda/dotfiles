@@ -133,4 +133,22 @@ export PATH="/$HOME/go/bin:$PATH"
 # cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# fzf
+# disable CTRL+T keybind
+export FZF_CTRL_T_COMMAND=""
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# neovim
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
+eval "$(atuin init zsh --disable-up-arrow)"
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/completion.zsh.inc'; fi
