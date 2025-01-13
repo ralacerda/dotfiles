@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/ralacerda/.zsh/completions:"* ]]; then export FPATH="/home/ralacerda/.zsh/completions:$FPATH"; fi
 LANG=en_US.UTF-8
 
 base_path="$HOME/.zsh"
@@ -152,3 +154,4 @@ if [ -f '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/path.zsh.inc' ];
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/completion.zsh.inc'; fi
+. "/home/ralacerda/.deno/env"
