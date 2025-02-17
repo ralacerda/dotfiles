@@ -73,6 +73,7 @@ ghp() {
     gh repo create "$name" --private --source=. --remote=upstream --push
 }
 
+alias ghl='gh repo list skylar-ai -L 100 --json name --jq ".[].name" | rofi -dmenu | xargs -I {} gh browse -R skylar-ai/{}'
 
 # Alias for Zoxide
 ## Run zoxide in interactive mode passing folders that start with the current folder
