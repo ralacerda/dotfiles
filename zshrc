@@ -63,7 +63,7 @@ alias gc='git clone'
 alias gs='git status'
 
 # Move to the root of the git project
-alias cg='cd $(git rev-parse --show-toplevel)'
+alias gr='cd $(git rev-parse --show-toplevel)'
 
 # Alias for gh commands
 ## Use fzf to select a repository to clone
