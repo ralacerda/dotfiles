@@ -1,4 +1,8 @@
 gui:
+  branchColorPatterns:
+    'main': 'blue'
+    'develop': 'yellow'
+    'hotfix/': 'red'
   authorColors:
     'Renato Lacerda': 'cyan'
     '*': 'red'
@@ -24,12 +28,18 @@ gui:
 
 disableStartupPopups: true
 
+git: 
+  mainBranches:
+    - master
+    - main
+    - develop
+
 keybinding:
   universal:
     quit: 'Q'
     quit-alt1: '<c-c>' # alternative/alias of quit
     return: '<c-q>' # return to previous menu, will quit if there's nowhere to return
-    
+
 os:
   Edit: 'nano'
 
