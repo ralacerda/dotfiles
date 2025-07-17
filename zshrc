@@ -108,8 +108,8 @@ eval "$(starship init zsh)"
 # Load history, completion and plugins
 source $base_path/history.zsh
 source $base_path/completion.zsh
-source /home/ralacerda/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $base_path/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $base_path/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Set pnpm variables
 export PNPM_HOME="$HOME/.local/share/pnpm"
