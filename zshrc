@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/ralacerda/.zsh/completions:"* ]]; then export FPATH="/home/ralacerda/.zsh/completions:$FPATH"; fi
 LANG=en_US.UTF-8
 
 base_path="$HOME/.zsh"
@@ -80,7 +82,7 @@ alias cdz='zi "$(pwd)" /'
 # Pipe find with maxdepth 1 into sort into fzf and cd into the selected folder
 cdl() {
     local target
-    target="$(find . -maxdepth 1 -type d -printf "%f\n" | LC_COLLATE=C sort -r | fzf)" || return
+    target="$(find . -maxdepth 1 -type d -not -name '.' -printf "%T@ %f\n" | sort -nr | cut -d' ' -f2- | fzf)" || return
     cd "$target" || return
 }
 
@@ -125,3 +127,11 @@ eval "`fnm env`"
 
 # go
 export PATH="$HOME/go/bin:$PATH"
+
+# fnm
+FNM_PATH="$HOME/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$HOME/.local/share/fnm:$PATH"
+  eval "$(fnm env --use-on-cd --shell zsh)"
+fi
+. "/home/ralacerda/.deno/env"
