@@ -83,6 +83,9 @@ alias ghl='gh repo list skylar-ai -L 100 --json name --jq ".[].name" | rofi -dme
 ## Basically a way to run "zi" but only for the current folder
 alias cdz='zi "$(pwd)" /'
 
+# Bind ctrl+z to "zi"
+bindkey -s "^Z" "zi^M" 
+
 # Pipe find with maxdepth 1 into sort into fzf and cd into the selected folder
 cdl() {
     local target
