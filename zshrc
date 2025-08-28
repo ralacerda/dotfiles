@@ -159,3 +159,5 @@ if [ -f '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/path.zsh.inc' ];
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ralacerda/Repos/sklippy-backend/google-cloud-sdk/completion.zsh.inc'; fi
 . "/home/ralacerda/.deno/env"
+
+. "$HOME/.cargo/env"
