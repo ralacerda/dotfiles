@@ -7,8 +7,27 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "vim_mode": false,
-  "helix_mode": false,
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "prettier": {
+    "allowed": true
+  },
+  "toolbar": {
+    "code_actions": true
+  },
+  "hover_popover_delay": 200,
+  "show_signature_help_after_edits": true,
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5"
+    },
+    "model_parameters": []
+  },
   "gutter": {
     "line_numbers": false
   },
