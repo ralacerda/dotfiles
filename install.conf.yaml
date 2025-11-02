@@ -22,4 +22,6 @@
       path: kitty
     ~/.config/bat:
       path: bat
-
+    ~/.config/zed/settings.json:
+      force: true
+      path: zed/settings.json
