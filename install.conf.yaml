@@ -12,21 +12,14 @@
     ~/.gitconfig:
       path: gitconfig
       force: true
-    ~/.local/share/konsole:
-      force: true
-      path: konsole
     ~/.config/lazygit:
       path: lazygit
-      force: true
-    ~/.config/rofi:
-      path: rofi
       force: true
     ~/.config/starship.toml:
       path: starship.toml
       force: true
     ~/.config/kitty:
       path: kitty
-    ~/.config/nvim:
-      path: nvim
     ~/.config/bat:
       path: bat
+
