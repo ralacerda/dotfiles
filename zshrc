@@ -89,7 +89,7 @@ bindkey -s "^Z" "zi^M"
 # Pipe find with maxdepth 1 into sort into fzf and cd into the selected folder
 cdl() {
     local target
-    target="$(find . -maxdepth 1 -type d -printf "%f\n" | LC_COLLATE=C sort -r | fzf)" || return
+    target="$(find . -maxdepth 1 -type d -not -name '.' -printf "%T@ %f\n" | sort -nr | cut -d' ' -f2- | fzf)" || return
     cd "$target" || return
 }
 
