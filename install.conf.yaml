@@ -19,6 +19,7 @@
       path: starship.toml
       force: true
     ~/.config/kitty:
+      force: true
       path: kitty
     ~/.config/bat:
       path: bat
