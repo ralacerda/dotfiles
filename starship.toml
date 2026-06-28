@@ -5,6 +5,7 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+${custom.distrobox}\
 $cmd_duration\
 $line_break\
 $python\
@@ -49,3 +50,8 @@ disabled = true
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[custom.distrobox]
+command = "echo $CONTAINER_ID"
+when = "test -n \"$CONTAINER_ID\""
+format = "on [📦 $output](bold blue) "
